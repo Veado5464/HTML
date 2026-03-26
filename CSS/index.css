@@ -1,80 +1,156 @@
 body {
-    padding: 100px 0 150px 0;
-    margin: 0;
-    background-color: aliceblue;
+  margin: 0;
+  background-image: radial-gradient(ellipse farthest-corner, #02005c 18%, transparent 100%);
+}
+
+#center-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#nav-bar {
+  list-style-type: none;
+  height: 25px;
+  overflow: hidden;
+  font-size: x-large;
+}
+
+.nav {
+  display: block;
+  flex-direction: row;
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .everything {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 4335px;
+  color: #eeeeee;
+}
+
+
+.backgroundColorOne{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.backgroundColorTwo{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
 }
 
 .first-section {
-    width: 750px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 750px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
 }
 
-.sectionOne {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#selfie {
+  border-radius: 100%;
+}
+
+#number-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+}
+
+.Social-Media {
+  display: flex;
+  flex-direction: column;
 }
 
 .second-section {
-    width: 750px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 750px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 0 12px 0 0;
+  color: #eeeeee;
 }
 
 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+  font-size: 40px;
+  color: #eeeeee;
 }
 
 .third-section {
-    width: 750px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 750px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 0 20px;
+  color: #eeeeee;
 }
 
 #link-price {
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-    font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  font-size: 14px;
 }
 
 .fourth-section {
-    padding: 0 0 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+  border-radius: 25px;
+}
+
+.scroll-container {
+  justify-content: center;
 }
 
 img {
-width: 225px;
-height: 225px;
+width: 300px;
+height: 300px;
 }
 
-ul {
+#items {
   display: flex;
-  width: 226px;
+  height: 350px;
+  width: 301px;
   gap: 4vw;
   padding-left: 0;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scroll-marker-group: after;
+  color: #eeeeee;
 }
 
-li {
+.items-pics {
   list-style-type: none;
   background-color: #ffffff00;
   flex: 0 0 33%;
@@ -85,15 +161,15 @@ li {
 
 ::scroll-marker-group {
   display: flex;
-  gap: 0.4em;
+  gap: 1em;
   place-content: center;
 }
 
-li {
+.items-pics {
   counter-increment: markers;
 }
 
-li::scroll-marker {
+.items-pics::scroll-marker {
   content: counter(markers);
   font-family: sans-serif;
   width: fit-content;
@@ -103,15 +179,15 @@ li::scroll-marker {
   text-decoration: none;
   border: 2px solid rgb(0 0 0 / 0.15);
   border-radius: 0.5em;
-  background-color: #eeeeee;
+  color: #eeeeee;
 }
 
-li:first-child::scroll-marker {
+.items-pics:first-child::scroll-marker {
   content: "1";
 }
 
-li:last-child::scroll-marker {
-  content: "5";
+.items-pics:last-child::scroll-marker {
+  content: "4";
 }
 
 ::scroll-marker:hover {
@@ -119,20 +195,34 @@ li:last-child::scroll-marker {
 }
 
 ::scroll-marker:target-current {
-  background-color: rgb(0, 2, 128);
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: #eeeeee;
+}
+
+.my-work {
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fith-section {
-    width: 750px;
-    height: 175px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 750px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 0 20px;
+  color: #eeeeee;
 }
 
-#contact-me {
-    padding-top: 100px;
-    height: 1px;
+.footer-info {
+  padding: 5px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.842);
 }

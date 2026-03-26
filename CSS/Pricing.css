@@ -1,6 +1,28 @@
 body {
-    padding: 100px 0 0 0;
+    padding: 100px 0 0 100px;
     margin: 0;
+    background-image: radial-gradient(ellipse farthest-corner, #02005c 3%, transparent 75%);
+}
+
+p {
+    color: #eeeeee;
+}
+
+#nav-bar {
+  list-style-type: none;
+  height: 25px;
+  overflow: hidden;
+  font-size: x-large;
+}
+
+.nav {
+  display: block;
+  flex-direction: row;
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 #pricing {
@@ -53,4 +75,8 @@ body {
 
 #submit {
     width: 100px;
+}
+
+a {
+    color: antiquewhite;
 }
