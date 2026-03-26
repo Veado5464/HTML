@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: radial-gradient(ellipse farthest-corner, #02005c 18%, transparent 100%);
+  background-image: radial-gradient(ellipse farthest-corner, #02005c 18%, transparent 80%);
 }
 
 #center-nav{

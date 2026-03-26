@@ -47,6 +47,37 @@ p {
     align-content: center;
 }
 
+#address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 300px;
+}
+
+#street {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+#addressbar {
+    width: 385px;
+}
+
+#city {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    gap: 15px;
+}
+
 #input {
     display: flex;
     flex-direction: column;
