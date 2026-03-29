@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joshua Installtion</title>
     <link rel="stylesheet" href="/CSS/Pricing.css">
+    
 </head>
-<body>
+<link rel="stylesheet" href="../JS/Submit.js">
+<body>    
     <div id="pricing">
         <nav id="center-nav">
             <ul id="nav-bar" class="nav">
@@ -14,38 +16,48 @@
                 <li class="nav"><a href="/index/MyStuff.html">My Passion</a></li>
             </ul>
         </nav>
-        <form action="/action_page.php">
+        <form action="send email" method="post">
             <div id="name">
                 <p>Name</p>
                 <input class="input-info" type="text" name="Name" placeholder="Your Name" required>
             </div>
-            <span id="phone">
+            <div id="phone">
                 <p>Phone</p>
                 <input class="input-info" type="tel" name="Phone" placeholder="Phone Number" required>
-            </span>
-            <span>
+            </div>
+            <div>
                 <address id="address">
-                    <span id="street">
+                    <div id="street">
                         <p>Street Address</p>
-                        <input class="input-info" type="" id="addressbar" placeholder="Street Address" required>
-                    </span>
-                    <span id="city">
+                        <input class="input-info" type="text" id="addressbar" placeholder="Street Address" required>
+                    </div>
+                    <div id="city">
                         <p>City</p>
-                        <input class="input-info" type="" placeholder="City" required>
+                        <input class="input-info" type="text" placeholder="City" required>
                         <p>Zip Code</p>
-                        <input class="input-info" type="number" minlength="5" placeholder="Zip Code" required>
-                    </span>
+                        <input class="input-info" id="zip" type="text" pattern="[0-9]{5}" placeholder="Zip Code" required>
+                    </div>
                 </address>
-            </span>
+            </div>
             <div id="input">
                 <p>Description</p>
                 <input type="text" name="Description" id="info" placeholder="Please describe what you need in detail. Example: 'I need an 85 inch screen TV mounted.'" required>
             </div>
             <div id="fileUpload">
                 <input type="file" id="myFile" name="filename">
-                <input id="submit" type="submit">
+                <a href="./Submit.html" target="_blank">
+                <button type="button" id="submit">Submit</button>
+                </a>
             </div>
         </form>
     </div>
+    <script>
+        var message = 'Hello, I will only be servicing a radius of 50 miles from Whittier, Ca';
+        alert(message);
+        let submitButton = document.getElementById('submit');
+        submitButton.addEventListener('click', function() {
+            emailjs.send
+        });
+    </script>
 </body>
 </html>

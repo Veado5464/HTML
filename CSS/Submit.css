@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-image: radial-gradient(ellipse farthest-corner, #02005c 18%, transparent 80%);
+}
+
+#thankYou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #eeeeee;
+    width: 550px;
+}
+
+
+#nav-bar {
+  list-style-type: none;
+  height: 25px;
+  overflow: hidden;
+  font-size: x-large;
+}
+
+.nav {
+  display: block;
+  flex-direction: row;
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+    color: antiquewhite;
+}
